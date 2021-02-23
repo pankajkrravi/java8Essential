@@ -1,0 +1,7 @@
+
+public class MathClass {
+   public static void main(String[] args) {
+	  double doubleValue=-987.999;
+	  
+}
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+	String s1=	getInput("Enter a numeric Value :");
+	String s2=	getInput("Enter a numeric Value :");
+	String operator=	getInput("Chioose an Operator(+,-,*,/ )");
+	double result=0;
+	switch (operator) {
+	case "+":
+		
+		break;
+	case "-:
+	
+	break;
+	case "*:
+	
+	break;
+	case "/:
+	
+	break;
+	default:
+		break;
+		}
+	}
+
+	public static String getInput(String string) {
+		Scanner scanner = new Scanner(System.in);
+		return scanner.nextLine();
+	}
+}

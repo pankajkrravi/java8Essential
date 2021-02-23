@@ -1,0 +1,30 @@
+package src.com.example.java;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.net.URL;
+
+import com.sun.tools.classfile.Annotation.element_value;
+
+public class Main {
+
+	private static final String FLOWERS_FEED = "http://services.hanselandpetal.com/feeds/flowers.xml";
+
+	public static void main(String[] args) {
+		URL url = new URL(FLOWERS_FEED);
+		InputStream inputStream = url.openStream();
+		BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
+		StringBuilder builder = new StringBuilder();
+		while (true) {
+			int data = bufferedInputStream.read();
+			if (data == -1) {
+				break;
+			} else {
+				builder.append((char) data);
+			}
+		}
+
+	}
+
+}

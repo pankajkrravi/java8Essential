@@ -1,0 +1,9 @@
+
+public class ParsingStringvalues {
+	public static void main(String[] args) {
+	String str1="Welcome to bangalore";
+	System.out.println("Length of String :"+str1.length());
+	int position=str1.indexOf("bangalore");
+	
+  }
+}

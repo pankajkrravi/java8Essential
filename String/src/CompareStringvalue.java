@@ -1,0 +1,31 @@
+public class CompareStringvalue {
+	public static void main(String[] args) {
+		String string1 = "Mobile";
+		String string2 = "Mobile";
+		if (string1 == string2) {
+			System.out.println("str 1 == str2");
+		} else {
+			System.out.println("Not Match !!");
+		}
+		String string3 = "mobile";
+		if (string1 == string3) {
+			System.out.println("str1 == str 3");
+		} else {
+			System.out.println("Not match !!");
+		}
+		String part1 = "Hello ";
+		String part2 = "Everyone";
+		String strAppend = part1 + part2;
+		String stringMsg = "Hello Everyone";
+		/*
+		 * if (strAppend == stringMsg) {
+		 * System.out.println("Hello Everyone matched !!"); } else {
+		 * System.out.println("Not Matched !!"); }
+		 */
+		if (strAppend.equalsIgnoreCase(stringMsg)) {
+			System.out.println("Hello Everyone matched !!");
+		} else {
+			System.out.println("Not Matched !!");
+  		}
+	}
+}

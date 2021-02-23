@@ -1,0 +1,64 @@
+package com.pankaj.java;
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		String s1 = getInput("Enter a numeric Value :");
+		String s2 = getInput("Enter a numeric Value :");
+		String operator = getInput("Choose an Operator(+,-,*,/ )");
+		double result = 0;
+		try {
+			switch (operator) {
+			case "+":
+				result = addValues(s1, s2);
+				break;
+			case "-":
+				result = subsValues(s1, s2);
+				break;
+			case "*":
+				result = mulValues(s1, s2);
+				break;
+			case "/":
+				result = divValues(s1, s2);
+				break;
+			default:
+				System.out.println("Unrecognized Operation");
+				break;
+			}
+			System.out.println("The result = "+result);
+		} catch (Exception e) {
+		
+			System.out.println("Number formating Exception"+e.getMessage());
+		}
+	}
+
+	private static String getInput(String string) {
+		System.out.println(string);
+		Scanner scanner = new Scanner(System.in);
+		return scanner.nextLine();
+	}
+
+	private static double addValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		return d1 + d2;
+	}
+
+	private static double subsValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		return d1 - d2;
+	}
+
+	private static double mulValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		return d1 * d2;
+	}
+
+	private static double divValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		return d1 / d2;
+	}
+}

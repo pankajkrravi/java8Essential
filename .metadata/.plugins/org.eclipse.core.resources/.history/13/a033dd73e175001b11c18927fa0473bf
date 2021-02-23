@@ -1,0 +1,14 @@
+package com.example.java;
+
+import java.util.List;
+
+import com.example.java.model.Olive;
+
+public class OlivePress {
+	public int getOliv(List<Olive> olives) {
+		for (Olive ol : olives) {
+			System.out.println(ol.name);
+		}
+		return 0;
+	}
+}

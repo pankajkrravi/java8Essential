@@ -1,0 +1,6 @@
+
+public class TwoDAray {
+	public static void main(String[] args) {
+		String [][] states=new String[3][2];
+	}
+}

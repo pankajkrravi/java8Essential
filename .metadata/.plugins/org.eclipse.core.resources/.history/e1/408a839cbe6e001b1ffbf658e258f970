@@ -1,0 +1,8 @@
+
+public class MathClass {
+	public static void main(String[] args) {
+		double doubleValue = -987.999;
+		long result = Math.round(doubleValue);
+		System.out.println();
+	}
+}

@@ -1,0 +1,13 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapProj {
+	public static void main(String[] args) {
+		Map<String, String> map=new HashMap<String, String>();
+		map.put("Bihar", "Patna");
+		map.put("Karnatika", "Bangalore");
+		map.put("Jharkhand", "Ranchi");
+		
+		
+	}
+}

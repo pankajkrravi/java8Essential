@@ -1,0 +1,7 @@
+
+public class Loops {
+	public static void main(String[] args) {
+		String monts[] = { "january", "feburary", "March", "April", "may", "June", "July", "August", "Sepetember",
+				"october", "November", "December" };
+	}
+}

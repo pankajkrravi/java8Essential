@@ -1,0 +1,10 @@
+
+public class PrimitiveToString {
+	public static void main(String[] args) {
+	
+	   int i=17876;
+	   boolean b=false;
+	   long l=7866580L;
+	   
+}
+}

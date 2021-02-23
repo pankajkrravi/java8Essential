@@ -1,0 +1,16 @@
+package com.example.java;
+
+import java.util.List;
+
+import com.example.java.model.Olive;
+
+public class OlivePress {
+	public int getOil(List<Olive> olives) {
+		int totalOil=0;
+		for (Olive ol : olives) {
+			System.out.println(ol.getName());
+			totalOil+=ol.crush();
+		}
+		return totalOil;
+	}
+}

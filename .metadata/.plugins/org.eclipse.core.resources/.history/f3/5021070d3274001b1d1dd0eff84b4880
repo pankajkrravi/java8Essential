@@ -1,0 +1,8 @@
+import java.util.Locale;
+
+public class NumberFormate {
+	public static void main(String[] args) {
+		Locale locale=new Locale("Hindi", "India");
+		
+	}
+}

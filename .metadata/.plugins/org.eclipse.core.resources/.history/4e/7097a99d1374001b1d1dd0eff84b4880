@@ -1,0 +1,14 @@
+
+public class BuildStringFromMultipleValues {
+	public static void main(String[] args) {
+		String string1="pankaj";
+		String string2="kumar";
+		String stringresult=string1+string2;
+		
+		System.out.println(stringresult);
+		StringBuilder builder=new StringBuilder("Hello");builder.append(" World");
+		builder.append("!!!");
+		System.out.println(builder);
+		
+	}
+}

@@ -1,0 +1,30 @@
+package com.example.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.java.model.Olive;
+
+public class MainRunner {
+	public static void main(String[] args) {
+		List<Olive> olives = new ArrayList<Olive>();
+		/*
+		 * Olive olive = new Olive("kalamata", 0X2E0854, 9); olives.add(olive); Olive
+		 * olive2 = new Olive("kalamata", 0X2E0854, 4); olives.add(olive2); Olive olive3
+		 * = new Olive("Ligurian", 0X0009000, 4); olives.add(olive3); OlivePress
+		 * olivePress = new OlivePress();
+		 */
+	
+		int totalOil=0
+		olives.add(new Olive("kalamata", 0X2E0854, 9)); 	  	
+	
+		olives.add(new Olive("kalamata", 0X2E0854, 4));
+	
+		olives.add(new Olive("Ligurian", 0X0009000, 4));
+		OlivePress olivePress = new OlivePress();
+		int totalOil = olivePress.getOil(olives);
+		System.out.println("Total Olive Oil = " + totalOil);
+		
+	}
+
+}

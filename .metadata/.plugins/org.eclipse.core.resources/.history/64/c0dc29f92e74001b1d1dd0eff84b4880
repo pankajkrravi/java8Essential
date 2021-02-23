@@ -1,0 +1,7 @@
+
+public class CompareStringvalue {
+   public static void main(String[] args) {
+	String string1="Mobile";
+	String string2="Mobile";
+}
+}

@@ -1,0 +1,13 @@
+
+public class ArrayClass {
+	public static void main(String[] args) {
+		//set initial size
+		int sized[] = new int[15];
+		for (int i = 0; i < sized.length; i++) {
+			sized[i]=i*100;
+		}
+		for (int i : sized) {
+			System.out.println(i);
+		}
+	}
+}

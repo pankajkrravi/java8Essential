@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;BigDecimal.java&apos; to &apos;BigDecimalExample.java&apos;&#x0A;- Original project: &apos;PrimitiveVariables&apos;&#x0A;- Original element: &apos;BigDecimal.java&apos;&#x0A;- Renamed element: &apos;BigDecimalExample.java&apos;" description="Rename compilation unit &apos;BigDecimal.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{BigDecimal.java" name="BigDecimalExample.java" references="false" stamp="1613302815258" version="1.0"/>
+</session>

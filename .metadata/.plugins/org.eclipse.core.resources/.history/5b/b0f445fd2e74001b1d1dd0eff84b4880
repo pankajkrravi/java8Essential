@@ -1,0 +1,10 @@
+
+public class CompareStringvalue {
+   public static void main(String[] args) {
+	String string1="Mobile";
+	String string2="Mobile";
+	if (string1==string2) {
+		System.out.println("tr 1 == str2");
+	}
+}
+}

@@ -1,0 +1,9 @@
+
+public class StringClass {
+	public static void main(String[] args) {
+		String string1 = "My anme is apnakaj";
+		String string2 = new String(" My last name is Ravi");
+		System.out.println(string1);
+		System.out.println();
+	}
+}

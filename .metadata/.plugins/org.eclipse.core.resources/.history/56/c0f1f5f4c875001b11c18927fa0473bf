@@ -1,0 +1,15 @@
+
+public class TwoDAray {
+	public static void main(String[] args) {
+		String[][] states = new String[3][2];
+		states[0][0] = "KA";
+		states[0][1] = "TN";
+		states[1][0] = "BR";
+		states[1][1] = "PB";
+		states[2][0] = "AP";
+		states[2][1] = "JK";
+		for (int i = 0; i < states.length - 1; i++) {// Length property refers to the outer array i.e=> 3 here
+			StringBuilder builder=new StringBuilder();
+		}
+	}
+}

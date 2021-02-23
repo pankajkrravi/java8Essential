@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		String s1 = getInput("Enter a numeric Value :");
+		String s2 = getInput("Enter a numeric Value :");
+		String operator = getInput("Chioose an Operator(+,-,*,/ )");
+		double result = 0;
+		try {
+			switch (operator) {
+			case "+":
+				result = addValues(s1, s2);
+				break;
+			case "-":
+				result = subsValues(s1, s2);
+				break;
+			case "*":
+				result = mulValues(s1, s2);
+				break;
+			case "/":
+				result = divValues(s1, s2);
+				break;
+			default:
+				System.out.println("Unrecognized Operation");
+				break;
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static String getInput(String string) {
+		Scanner scanner = new Scanner(System.in);
+		return scanner.nextLine();
+	}
+
+	public static double addValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s1);
+		return d1 + d2;
+	}
+
+	public static double subsValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s1);
+		return d1 - d2;
+	}
+
+	public static double mulValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s1);
+		return d1 * d2;
+	}
+
+	public static double divValues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s1);
+		return d1 / d2;
+	}
+}

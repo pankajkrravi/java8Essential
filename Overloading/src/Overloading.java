@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Overloading {
+	public static void main(String[] args) {
+		String string1 = getInput("Enter value 1 :");
+		String string2 = getInput("Enter value 2 :");
+		double result = addvalues(string1, string2);
+		System.out.println("The Result =" + result);
+	}
+
+	public static String getInput(String string) {
+		System.out.println(string);
+		Scanner scanner = new Scanner(System.in);
+		return scanner.nextLine();
+	}
+
+	public static double addvalues(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		return d1 + d2;
+	}
+
+	public static double addvalues(String s1, String s2, String s3) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double d3 = Double.parseDouble(s3);
+		return d1 + d2 + d3;
+	}
+
+	public static double addvalues(String... values) {
+		double result = 0;
+		for (String value : values) {
+			double d = -Double.parseDouble(value);
+			result += d;
+		}
+		return result;
+	}
+}

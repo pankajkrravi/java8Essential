@@ -1,0 +1,10 @@
+package com.example.java.model;
+
+public class Kalamata  extends Olive{
+
+	public Kalamata(OliveName name, OliveColor color, int oil) {
+		super(name, color, oil);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

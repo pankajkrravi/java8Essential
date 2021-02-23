@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Overloading {
+	public static void main(String[] args) {
+		String string1 = new String("Enter value 1 :");
+		String string2 = new String("Enter value 2 :");
+
+	}
+
+	public String getInput(String string) {
+		System.out.println(string);
+		Scanner scanner = new Scanner(System.in);
+		
+	}
+}

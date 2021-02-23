@@ -1,0 +1,11 @@
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class OldApiDate {
+	public static void main(String[] args) {
+		Date date = new Date();
+		System.out.println("Todays Date and Time : " + date);
+		GregorianCalendar gregorianCalendar=new GregorianCalendar();
+		System.out.println(gregorianCalendar);
+	}
+}

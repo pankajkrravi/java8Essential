@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class LoopingProj {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList();
+		list.add("Pankaj");
+		list.add("Ravishankar");
+		list.add("Anusha");
+		list.add("Jatan");
+		System.out.println("==== Arraylist iterator ======= ");
+		Iterator<String> iterator = list.iterator();
+		while (iterator.hasNext()) {
+			String value = iterator.next();
+			System.out.println(value);
+		}
+		// for each
+		System.out.println(" &&&&&&&&&&&&&&& for each &&&&&&&&&&&&&&&& n");
+		for (String str : list) {
+			System.out.println(str);
+		}
+		System.out.println("Java 8 method referance :");
+
+	}
+}

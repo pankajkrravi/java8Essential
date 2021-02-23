@@ -1,0 +1,24 @@
+package src.com.example.java;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		File sourceFile = new File("files/loremipsum.txt");
+		File targetFile = new File("files/target.txt");
+
+		try {
+			FileUtils.copyFile(sourceFile, targetFile);
+			System.out.println(" *********** File copied **************n");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

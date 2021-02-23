@@ -1,0 +1,4 @@
+
+public enum OliveColor {
+		PURPLE("PURPLE",0X21)
+}
